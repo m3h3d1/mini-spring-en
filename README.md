@@ -59,9 +59,6 @@ If you find this project helpful, please give it a **STAR, thanks!!!**
 ## Usage
 Refer to [changelog.md](https://github.com/m3h3d1/mini-spring/blob/main-en/changelog.md)
 
-## Contributions
-Pull Requests are welcome.
-
 ## Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=DerekYRC/mini-spring&type=Date)](https://star-history.dera.page/#DerekYRC/mini-spring&Date)
