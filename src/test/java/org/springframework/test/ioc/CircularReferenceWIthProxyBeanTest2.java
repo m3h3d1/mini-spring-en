@@ -12,9 +12,9 @@ import org.springframework.test.service.HelloService;
 public class CircularReferenceWIthProxyBeanTest2 {
 
     /**
-     * 测试1：无循环依赖的普通对象 (spring.xml配置文件中的helloService对象)
+     * Test 1: plain object with no circular dependency (helloService in spring.xml)
      *
-     * BeanPostprocessor后置处理器返回原始bean，收尾阶段，二级缓存中无值，说明无循环依赖，将初始化的bean添加到一级缓存
+     * The BeanPostProcessor returns the original bean. In the final step the second-level cache is empty, so there is no circular dependency, and the initialized bean goes into the first-level cache.
      */
     @Test
     public void test1() {
@@ -25,9 +25,9 @@ public class CircularReferenceWIthProxyBeanTest2 {
 
 
     /**
-     * 测试2: 无循环依赖的代理对象 (circular-reference-with-proxy-bean-2.xml中的c对象)
+     * Test 2: proxied object with no circular dependency (c in circular-reference-with-proxy-bean-2.xml)
      *
-     * BeanPostprocessor后置处理器返回代理bean，收尾阶段，二级缓存中无值，说明无循环依赖，将代理bean添加到一级缓存
+     * The BeanPostProcessor returns a proxy bean. In the final step the second-level cache is empty, so there is no circular dependency, and the proxy bean goes into the first-level cache.
      */
     @Test
     public void test2() {
@@ -38,17 +38,17 @@ public class CircularReferenceWIthProxyBeanTest2 {
 
 
     /**
-     * 测试3：存在循环依赖的普通对象 (circular-reference-without-proxy-bean.xml中的a,b对象)
+     * Test 3: plain objects with a circular dependency (a and b in circular-reference-without-proxy-bean.xml)
      *
-     * BeanPostprocessor后置处理器返回普通bean,收尾阶段，二级缓存中有值，说明有循环依赖，为了确保a.getB() == b ，将二级缓存中bean添加到一级缓存
+     * The BeanPostProcessor returns a plain bean. In the final step the second-level cache has a value, so there is a circular dependency; the bean from the second-level cache goes into the first-level cache so that a.getB() == b.
      *
      */
     @Test
     public void test3() {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:circular-reference-without-proxy-bean.xml");
-        //A为普通对象
+        // A is a plain object
         A a = (A) context.getBean("a");
-        //B为普通对象
+        // B is a plain object
         B b = (B) context.getBean("b");
 
         Assert.assertTrue(a.getB() == b);
@@ -57,21 +57,21 @@ public class CircularReferenceWIthProxyBeanTest2 {
 
 
     /**
-     * 测试4：存在循环依赖的代理对象(circular-reference-with-proxy-bean.xml 中的a对象)
+     * Test 4: proxied object with a circular dependency (a in circular-reference-with-proxy-bean.xml)
      *
-     * BeanPostprocessor后置处理器跳过执行，收尾阶段，二级缓存中有代理对象，将二级缓存添加到一级缓存中
+     * The BeanPostProcessor is skipped. In the final step the second-level cache holds the proxy, which goes into the first-level cache.
      */
     @Test
     public void test4() {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:circular-reference-with-proxy-bean.xml");
-        //A为代理对象
+        // A is a proxy object
         A a = (A) context.getBean("a");
-        //B为普通对象
+        // B is a plain object
         B b = (B) context.getBean("b");
 
         a.func();
 
-        //对象a的二级缓存和一级缓存内容一致，因此b.getA() == a 为 true
+        // a is the same object in both caches, so b.getA() == a is true
         Assert.assertTrue(b.getA() == a);
     }
 

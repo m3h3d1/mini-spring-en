@@ -4,23 +4,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- c被代理 -->
+    <!-- c is proxied -->
     <bean id="c" class="org.springframework.test.bean.C"/>
 
-    <!-- BeanPostProcess实现类 -->
+    <!-- BeanPostProcessor implementation -->
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
 
-    <!--    pontcutAdvisor类-->
+    <!-- PointcutAdvisor -->
     <bean id="pointcutAdvisor" class="org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor">
         <property name="expression" value="execution(* org.springframework.test.bean.C.*(..))"/>
         <property name="advice" ref="methodInterceptor"/>
     </bean>
 
-    <!--    增强类-->
+    <!-- Advice interceptor -->
     <bean id="methodInterceptor" class="org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor">
         <property name="advice" ref="beforeAdvice"/>
     </bean>
 
-    <!--    前置增强-->
+    <!-- Before advice -->
     <bean id="beforeAdvice" class="org.springframework.test.common.ABeforeAdvice"/>
 </beans>

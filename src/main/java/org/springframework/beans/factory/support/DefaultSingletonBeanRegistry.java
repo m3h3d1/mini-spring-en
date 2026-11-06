@@ -41,7 +41,7 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 		Object singletonObject = singletonObjects.get(beanName);
 		if (singletonObject == null) {
 			singletonObject = earlySingletonObjects.get(beanName);
-			//不是所有的getSingleton()都要去三级缓存里面查！
+			// Not every getSingleton() call should look in the third-level cache
 			if (singletonObject == null && allowEarlyReference) {
 				ObjectFactory<?> singletonFactory = singletonFactories.get(beanName);
 				if (singletonFactory != null) {

@@ -47,7 +47,6 @@ If you find this project helpful, please give it a **STAR, thanks!!!**
 - [PropertyPlaceholderConfigurer](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#PropertyPlaceholderConfigurer)
 - [Package Scan](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#package-scan)
 - [@Value Annotation](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#Value-annotation)
-- [@Autowired Annotation](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#valAutowired-annotationue注解)
 - [Dependency Injection with @Autowired](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#Autowired-annotation)
 - [Type Conversion (Part 1)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#type-conversion-part-1)
 - [Type Conversion (Part 2)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#type-conversion-part-2)
