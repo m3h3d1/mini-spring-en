@@ -15,55 +15,55 @@ If you find this project helpful, please give it a **STAR, thanks!!!**
 
 ### Basics: IoC
 
-- [IoC](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#basics-ioc)
-  - [Simple Bean Container](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#simple-bean-container)
-  - [BeanDefinition and BeanDefinitionRegistry](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#beandefinition-and-beandefinitionregistry)
-  - [Bean Instantiation Strategy](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#bean-instantiation-strategy)
-  - [Populating Bean Properties](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#populating-bean-properties)
-  - [Injecting a Bean into Another Bean](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#injecting-a-bean-into-another-bean)
-  - [Resources and Resource Loaders](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#resources-and-resource-loaders)
-  - [Defining Beans in XML](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#defining-beans-in-xml)
-  - [Container Extension Mechanisms (BeanFactoryPostProcessor & BeanPostProcessor)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#bean-factory-post-processor-and-bean-post-processor)
-  - [ApplicationContext](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#applicationcontext)
-  - [Bean Initialization and Destruction Methods](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#bean-initialization-and-destruction-methods)
-  - [Aware Interface](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#aware-interface)
-  - [Bean Scope - Adding Prototype Support](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#bean-scope-adding-prototype-support)
-  - [FactoryBean](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#FactoryBean)
-  - [Container Events and Event Listeners](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#container-events-and-event-listeners)
+- [IoC](https://m3h3d1.github.io/mini-spring-en/ioc/simple-bean-container/)
+  - [Simple Bean Container](https://m3h3d1.github.io/mini-spring-en/ioc/simple-bean-container/)
+  - [BeanDefinition and BeanDefinitionRegistry](https://m3h3d1.github.io/mini-spring-en/ioc/beandefinition-and-beandefinitionregistry/)
+  - [Bean Instantiation Strategy](https://m3h3d1.github.io/mini-spring-en/ioc/bean-instantiation-strategy/)
+  - [Populating Bean Properties](https://m3h3d1.github.io/mini-spring-en/ioc/populating-bean-properties/)
+  - [Injecting a Bean into Another Bean](https://m3h3d1.github.io/mini-spring-en/ioc/injecting-a-bean-into-another-bean/)
+  - [Resources and Resource Loaders](https://m3h3d1.github.io/mini-spring-en/ioc/resources-and-resource-loaders/)
+  - [Defining Beans in XML](https://m3h3d1.github.io/mini-spring-en/ioc/defining-beans-in-xml/)
+  - [Container Extension Mechanisms (BeanFactoryPostProcessor & BeanPostProcessor)](https://m3h3d1.github.io/mini-spring-en/ioc/bean-factory-post-processor-and-bean-post-processor/)
+  - [ApplicationContext](https://m3h3d1.github.io/mini-spring-en/ioc/applicationcontext/)
+  - [Bean Initialization and Destruction Methods](https://m3h3d1.github.io/mini-spring-en/ioc/bean-initialization-and-destruction-methods/)
+  - [Aware Interface](https://m3h3d1.github.io/mini-spring-en/ioc/aware-interface/)
+  - [Bean Scope - Adding Prototype Support](https://m3h3d1.github.io/mini-spring-en/ioc/bean-scope-adding-prototype-support/)
+  - [FactoryBean](https://m3h3d1.github.io/mini-spring-en/ioc/factorybean/)
+  - [Container Events and Event Listeners](https://m3h3d1.github.io/mini-spring-en/ioc/container-events-and-event-listeners/)
 
 ### Basics: AOP
 
-- [AOP](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#basics-aop)
-  - [Pointcut Expressions](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#pointcut-expression)
-  - [JDK-Based Dynamic Proxy](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#jdk-based-dynamic-proxy)
-  - [CGLIB-Based Dynamic Proxy](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#cglib-based-dynamic-proxy)
-  - [AOP Proxy Factory](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#aop-proxy-factory)
-  - [Common Advice Types: BeforeAdvice, AfterAdvice, AfterReturningAdvice, ThrowsAdvice](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#common-advice-beforeadvice-afteradvice-afterreturningadvice-throwsadvice)
-  - [PointcutAdvisor: Combination of Pointcut and Advice](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#pointcutadvisor-pointcut-and-advice-combination)
-  - [Dynamic Proxy in Bean Lifecycle](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#dynamic-proxy-in-bean-lifecycle)
+- [AOP](https://m3h3d1.github.io/mini-spring-en/aop/pointcut-expression/)
+  - [Pointcut Expressions](https://m3h3d1.github.io/mini-spring-en/aop/pointcut-expression/)
+  - [JDK-Based Dynamic Proxy](https://m3h3d1.github.io/mini-spring-en/aop/jdk-based-dynamic-proxy/)
+  - [CGLIB-Based Dynamic Proxy](https://m3h3d1.github.io/mini-spring-en/aop/cglib-based-dynamic-proxy/)
+  - [AOP Proxy Factory](https://m3h3d1.github.io/mini-spring-en/aop/aop-proxy-factory/)
+  - [Common Advice Types: BeforeAdvice, AfterAdvice, AfterReturningAdvice, ThrowsAdvice](https://m3h3d1.github.io/mini-spring-en/aop/common-advice-beforeadvice-afteradvice-afterreturningadvice-throwsadvice/)
+  - [PointcutAdvisor: Combination of Pointcut and Advice](https://m3h3d1.github.io/mini-spring-en/aop/pointcutadvisor-pointcut-and-advice-combination/)
+  - [Dynamic Proxy in Bean Lifecycle](https://m3h3d1.github.io/mini-spring-en/aop/dynamic-proxy-in-bean-lifecycle/)
 
 ### Extension Features
 
-- [PropertyPlaceholderConfigurer](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#PropertyPlaceholderConfigurer)
-- [Package Scan](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#package-scan)
-- [@Value Annotation](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#Value-annotation)
-- [Dependency Injection with @Autowired](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#Autowired-annotation)
-- [Type Conversion (Part 1)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#type-conversion-part-1)
-- [Type Conversion (Part 2)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#type-conversion-part-2)
+- [PropertyPlaceholderConfigurer](https://m3h3d1.github.io/mini-spring-en/extensions/propertyplaceholderconfigurer/)
+- [Package Scan](https://m3h3d1.github.io/mini-spring-en/extensions/package-scan/)
+- [@Value Annotation](https://m3h3d1.github.io/mini-spring-en/extensions/value-annotation/)
+- [Dependency Injection with @Autowired](https://m3h3d1.github.io/mini-spring-en/extensions/autowired-annotation/)
+- [Type Conversion (Part 1)](https://m3h3d1.github.io/mini-spring-en/extensions/type-conversion-part-1/)
+- [Type Conversion (Part 2)](https://m3h3d1.github.io/mini-spring-en/extensions/type-conversion-part-2/)
 
 ### Advanced Topics
 
-- [Solving Circular Dependency Problem (Part 1): Without Proxy Objects](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#solving-circular-dependency-problem-1-without-proxy-objects)
-- [Solving Circular Dependency Problem (Part 2): With Proxy Beans](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#solving-circular-dependency-problem-2-with-proxy-beans)
+- [Solving Circular Dependency Problem (Part 1): Without Proxy Objects](https://m3h3d1.github.io/mini-spring-en/advanced/solving-circular-dependency-problem-1-without-proxy-objects/)
+- [Solving Circular Dependency Problem (Part 2): With Proxy Beans](https://m3h3d1.github.io/mini-spring-en/advanced/solving-circular-dependency-problem-2-with-proxy-beans/)
 
 #### Others
 
-- [Proxy bean properties not set (discovered and fixed by kerwin89)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#bug-fix-no-property-set-for-proxy-bean-discovered-and-fixed-by-kerwin89)
-- [Support for lazy loading and multiple aspects (by zqczgl)](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md#support-for-lazy-init-and-multi-advice-by-zqczgl)
+- [Proxy bean properties not set (discovered and fixed by kerwin89)](https://m3h3d1.github.io/mini-spring-en/extensions/bug-fix-no-property-set-for-proxy-bean-discovered-and-fixed-by-kerwin89/)
+- [Support for lazy loading and multiple aspects (by zqczgl)](https://m3h3d1.github.io/mini-spring-en/advanced/support-for-lazy-init-and-multi-advice-by-zqczgl/)
 
 ## Usage
 
-Refer to [changelog.md](https://github.com/m3h3d1/mini-spring/blob/dev/docs/changelog.md)
+Read the full walkthrough on the [documentation site](https://m3h3d1.github.io/mini-spring-en/).
 
 ## Star History
 
