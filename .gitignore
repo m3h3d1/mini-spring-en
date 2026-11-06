@@ -6,5 +6,5 @@ target/
 *.ipr
 *.iws
 .vscode
-docs/_site
-docs/.sass-cache
+docs/.sass-cachesite/
+.venv-docs/
